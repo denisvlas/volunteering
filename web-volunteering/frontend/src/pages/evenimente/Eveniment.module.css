@@ -1,0 +1,723 @@
+.eveniment {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  height: 600px;
+}
+
+.div {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 24px 1px rgba(0, 0, 0, 0.29);
+  -webkit-box-shadow: 1px 1px 24px 1px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 1px 1px 24px 1px rgba(0, 0, 0, 0.29);
+}
+.descriere-section{
+font-size: 17px;
+display: flex;
+flex-direction: column;
+
+}
+
+.locatie{
+  margin-top: 20px;
+}
+.img {
+  width: 100%;
+}
+
+.title {
+  font-size: 35px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+
+
+.desc {
+  font-size: 25px;
+}
+
+.lodaing {
+  height: 50vh;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+@keyframes loadingAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-spinner {
+  border: 10px solid #8a8787;
+  border-top: 10px solid #3498db;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: loadingAnimation 1s linear infinite;
+}
+
+.participa{
+  height: 40px;
+  padding: 8px;
+  font-size: 20px;
+  border: none;
+  position: absolute;
+  bottom: 20px;
+  width: 150px;
+  background: #23e3f0;
+  cursor: pointer;
+}
+
+.particip{
+  color: white;
+  width: 150px;
+  height: 40px;
+  padding: 8px;
+  font-size: 20px;
+  border: none;
+  position: absolute;
+  bottom: 20px;
+  background: #b2b4b4;
+  box-shadow: 3px 1px 5px 2px rgba(0,0,0,0.29) inset;
+  -webkit-box-shadow: 3px 1px 5px 2px rgba(0,0,0,0.29) inset;
+  -moz-box-shadow: 3px 1px 5px 2px rgba(0,0,0,0.29) inset;
+
+}
+.p-info {
+  text-align: start;
+  position: relative;
+  font-size: 20px;
+  padding: 25px;
+  display: flex;
+  height: 100%;
+  width: 400px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.table-container {
+  background: #fafafa;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  margin: 0 auto;
+}
+
+.section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  box-shadow: 1px 1px 24px 1px rgba(0, 0, 0, 0.29);
+  -webkit-box-shadow: 1px 1px 24px 1px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 1px 1px 24px 1px rgba(0, 0, 0, 0.29);
+}
+
+.descriere-section {
+  width: 100%;
+  height: 50%;
+  font-size: 20px;
+}
+.informatii-section {
+  width: 100%;
+  height: 60%;
+}
+
+.header {
+  padding: 0 20px;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: #f2f2f2;
+  height: 50px;
+  z-index: 400;
+}
+i {
+  font-size: 26px;
+  cursor: pointer;
+}
+.descriere {
+  padding: 20px;
+  max-height: 84%;
+  overflow: auto;
+  letter-spacing: 1px;
+  text-align: start;
+  height: 100%;
+  font-size: 20px;
+}
+
+.informatii {
+  width: 100%;
+  letter-spacing: 1px;
+  font-size: 20px;
+  display: flex;
+}
+
+.c1{
+background: green;
+display: flex;
+flex-direction: column;
+}
+.c2{
+
+}
+
+.info-s{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.info-s div{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col1 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 100%;
+}
+.col2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 15px;
+  height: 100%;
+}
+
+.edit{
+  padding: 10px;
+  gap: 10px;
+  width: 200%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.edit-loc{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.edit-loc div {
+  display: flex;
+  flex-direction: column;
+  width: 33.3%;
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+}
+.col2 input,select,.p-info input{
+  border:1px solid #dedede;
+  font-size: 20px;
+  
+
+}
+
+.categorii{
+  height: 30px;
+  font-size: 20px;
+}
+
+
+.loc-labels{
+  font-size: 17px;
+}
+.success{
+  color:#25de3e;
+  margin: 0 auto;
+  font-size: 25px;
+}
+.pop-info-menu {
+  display: flex;
+  flex-direction: column;
+  background: rgb(232, 232, 232);
+  position: absolute;
+  font-size: 25px;
+  gap: 5px;
+  top: 50px;
+  right: 0;
+  -webkit-box-shadow: 5px 5px 14px 0px rgba(0, 0, 0, 0.67);
+  -moz-box-shadow: 5px 5px 14px 0px rgba(0, 0, 0, 0.67);
+  box-shadow: 5px 5px 14px 0px rgba(0, 0, 0, 0.67);
+  z-index: 100;
+}
+
+.pop-info-menu span {
+  border-bottom: 1px solid grey;
+  padding: 10px;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.pop-info-menu span:hover {
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+
+
+.edit-btns-td{
+  padding: 10px !important;
+}
+.edit-btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+  height: 100%;
+
+}
+
+.my-table th{
+  height: 50px;
+  font-size: 23px;
+  text-align: left;
+  padding-left: 20px;
+  border: 1px solid rgb(205, 205, 205);
+  font-weight: 400;
+}
+
+.my-table {
+  position: relative;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+  margin: 30px auto;
+}
+.my-table td {
+  font-size: 20px;
+  height: 50px;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+
+.transactions .my-table td {
+  padding: 0 50px;
+  text-align: center;
+  height: 40px;
+  font-size: 22px;
+}
+
+.transactions-header {
+  border: 1px solid #ddd;
+  height: 40px;
+  font-size: 25px;
+}
+
+.transactions .my-table {
+  overflow: auto;
+}
+/* Stiluri pentru rândurile alternative */
+.my-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.my-table tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.bi .bi-list {
+  position: absolute;
+}
+
+.cantitate-span {
+  margin-left: 20%;
+}
+
+tbody{
+  position: relative;
+}
+
+.org-show-necesitati{
+  height: 100%;
+}
+.add-necesitati-div{
+  
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 25px;
+  position: absolute;
+  top: 0px;
+}
+
+.adauga-button{
+cursor: pointer;
+}
+.add-necesitati-div div{
+
+}
+
+.necesitate-form{
+  width: 50%;
+  gap: 20px;
+  position: absolute;
+  right: 50%;
+  z-index: 300;
+  padding: 20px 0;
+  transform: translate(+50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form-container{
+  position: absolute;
+  z-index: 200px;
+  background: rgba(163, 163, 163, 0.717);
+  position: absolute;
+  right: 50%;
+  z-index: 300;
+  padding: 46px 0;
+  transform: translate(+50%);
+  width: 100%;
+  height: 100%;
+
+}
+.donatie-form{
+  background: rgb(232, 232, 232);
+  height: 50%;
+  width: 70%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px;
+  z-index: 300;
+  
+}
+
+.donatie-form select,.donatie-form input{
+  height: 40px;
+  padding-left: 5px;
+  font-size: 23px;
+}
+.donatie-form div{
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+
+}
+.necesitate-form input{
+  width: 90%;
+  height: 40px;
+  padding: 10px;
+  
+}
+
+.add-button{
+  width: 50%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid grey;
+  margin: 70px auto;
+  background: #f5f5f5;
+  cursor: pointer;
+}
+
+.org-show-necesitati-table{
+  margin-top:100px;
+}
+.donatii-table{
+  width: 100%;
+  overflow: auto;
+}
+.info-table{
+ 
+    position: relative;
+    border-collapse: collapse;
+}
+
+.info-table td{
+    font-size: 20px;
+    height: 20px;
+    padding: 8px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.no-necesitati{
+  margin-top: 150px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 100;
+}
+.necesitate-form button,.donatie-form button{
+padding:5px 15px;
+font-size: 15px;
+}
+
+.chart {
+  position: relative;
+  top: 50px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.history-icon {
+  font-size: 35px;
+  cursor: pointer;
+
+}
+
+.transactions {
+  height: 290px;
+  width: 95%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.section-st {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  height: 920px;
+  box-shadow: 1px 1px 24px 1px rgba(0, 0, 0, 0.29);
+  -webkit-box-shadow: 1px 1px 24px 1px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 1px 1px 24px 1px rgba(0, 0, 0, 0.29);
+}
+
+.suma {
+  color: #49ca35;
+}
+
+.transactions-btn-div {
+  display: flex;
+  margin: 0 25px;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.sponsorizeaza,.ajuta {
+  height: 40px;
+  padding: 8px;
+  font-size: 20px;
+  border: none;
+  background: #25de3e;
+}
+
+.edit-necesitate-btn{
+  font-size: 30px;
+
+}
+
+.edit-necesitate-input{
+  padding: 5px;
+  font-size: 25px;
+  background: rgb(242, 239, 239);
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 100%;
+}
+
+.sponsorizeaza-container{
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top:0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #0000006d;
+}
+.sponsorizeaza-form{
+  font-size: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  align-items: center;
+  gap: 20px;
+  width: 90%;
+  width: 600px;
+  height: 300px;
+  background: rgb(255, 255, 255);
+  box-shadow: 1px 1px 24px 1px rgba(0,0,0,0.29);
+-webkit-box-shadow: 1px 1px 24px 1px rgba(0,0,0,0.29);
+-moz-box-shadow: 1px 1px 24px 1px rgba(0,0,0,0.29);
+}
+
+.sponsorizeaza-form input{
+  width: 60%;
+  padding: 0 15px;
+  height: 50px;
+  font-size: 30px;
+  box-shadow: 3px 1px 5px 2px rgba(0,0,0,0.29) inset;
+  -webkit-box-shadow: 3px 1px 5px 2px rgba(0,0,0,0.29) inset;
+  -moz-box-shadow: 3px 1px 5px 2px rgba(0,0,0,0.29) inset;
+}
+
+.sponsor-input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.ajuta{
+  width: 200px;
+}
+
+.close-x{
+  position: absolute;
+  top: 5px;
+  height: 30px;
+  border-radius: 50%;
+  right: 5px;
+  font-size: 30px;
+
+}
+
+.error{
+  position: absolute;
+  top: 10px;
+  color: red;
+}
+
+.error-input{
+  margin-top: 15px;
+  z-index: 2000;
+  border: 1px red solid;
+}
+
+
+
+/* Adaugă aceste stiluri în fișierul CSS al aplicației tale */
+.save-btn-container {
+  margin-top: 16px;
+  position: absolute;
+  bottom: -50px;
+  right: 50%;
+  transform: translate(50%);
+  text-align: center;
+}
+
+.save-btn {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #4caf50; /* culoarea de fundal a butonului */
+  color: #fff; /* culoarea textului butonului */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* adaugă o tranziție la schimbarea culorii de fundal */
+}
+
+.save-btn:hover {
+  background-color: #45a049; /* culoarea de fundal a butonului la hover */
+}
+
+.save-cancel-btns{
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+  display: flex;
+
+}
+
+
+
+.save-cancel-btns div{
+  width: 20%;
+  display: flex;
+}
+.cancel-btn {
+  background-color: transparent;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+
+}
+
+.cancel-btn:hover {
+  text-decoration: underline;
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+}
+
+.date{
+  width: 100%;
+}
+
+
+.textarea {
+  width: 100%;
+  height: 100%;
+  resize: none; /* dezactivează opțiunea de redimensionare */
+  box-sizing: border-box; /* asigură că lățimea și înălțimea includ și padding-ul și border-ul */
+  font-size: 16px; /* mărimea fontului */
+  padding: 8px; /* adaugă un spațiu de padding pentru a îmbunătăți aspectul */
+  border: 1px solid #ccc; /* adaugă un chenar pentru a delimita zona de editare */
+}
+
+
+.adauga-cancel-btn{
+  padding: 0!important;
+}
+
+.filtru-section{
+  display: flex;
+  gap: 20px;
+  height: 40px;
+  margin-bottom: 30px;
+}
+
+.filtru, .sortare{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(97, 156, 239);
+  width: 200px;
+  color: white;
+  font-size: 25px;
+}

@@ -1,0 +1,20 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.bi-emoji-frown{
+  font-size: 70px;
+}
+
+h1,h2,h3,h4{
+  font-weight: 100;
+}
+
+button{
+  cursor: pointer;
+}

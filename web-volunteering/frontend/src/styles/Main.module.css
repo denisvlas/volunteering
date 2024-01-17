@@ -1,0 +1,104 @@
+.header{
+    padding:0 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+    box-shadow: 0px 10px 20px -4px rgba(0,0,0,0.39);
+-webkit-box-shadow: 0px 10px 20px -4px rgba(0,0,0,0.39);
+-moz-box-shadow: 0px 10px 20px -4px rgba(0,0,0,0.39);
+}
+.profile{
+ display: flex;
+ align-items: center;
+ gap: 20px;
+}
+.profile i{
+    cursor: pointer;
+}
+.profile div{
+    width: 50px;
+    cursor: pointer;
+    height: 50px;
+}
+.links{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-size: 25px;
+}
+a{text-decoration: none;color: rgb(0, 0, 0);}
+
+.container{
+    width: 85%;
+    padding: 30px 0 80px 0;
+    justify-content: space-between;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.section{
+   margin:2% 0;
+   letter-spacing: 1px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 15px;
+   gap: 20px;
+   font-size: 20px;
+}
+
+.section h1{
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+.reg-btns a{
+    padding: 4px 20px;
+    text-decoration: none;
+    
+}
+.reg-btns{
+    display: flex;
+    gap: 20px;
+    font-size: 40px;
+    
+}
+.reg-org{
+    background: rgb(255, 255, 255);
+    color: black;
+    outline: 1px grey solid;
+}
+.reg-voluntar{
+    background: rgb(97, 156, 239);
+    color: white;
+}
+
+
+.v-profile{
+    background: #23e3f0;
+    
+}
+.o-profile{
+    background: #e07d0d;
+    
+}
+.s-profile{
+    background: #0cdc0c;
+    
+}
+.v-profile,.o-profile,.s-profile{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 50%;
+    font-size: 30px;
+    width: 55px;
+    height: 55px;
+}
